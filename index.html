@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Praneetha Peyyeti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333; /* Default text color */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            background-color: #210e24; /* Pink background */
+            color: white; /* White text */
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            animation: slideIn 1s ease forwards;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: hsl(200, 24%, 17%); /*  text for links */
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722; /* Orange color on hover */
+            animation: pulse 0.5s ease;
+        }
+
+        section#index {
+            background-image: url('/gif/projects-bg.gif'); /* Animated gif background */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #564d4d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInUp 2s ease;
+        }
+
+        section#index h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+            text-align: center;
+            animation: zoomIn 1s ease;
+        }
+
+        section#index p {
+            color: #d0d0d0;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: zoomIn 1s ease;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            background-image: url('/gif/next-button.gif'); /* Background for Next Button */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 120px;
+            margin: 0 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: bounceIn 1.5s ease-in-out infinite; /* Bouncing button */
+        }
+
+        .nav-button .button-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            animation: textBounce 1.5s ease-in-out infinite;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            animation: fadeInUp 2s ease;
+        }
+
+        /* Scroll Button */
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #e64a19;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes textBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Praneetha Peyyeti</h1>
+        <p>Cybersecurity Enthusiast | eJPT Certified | B.Tech Graduate</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="index">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my journey, skills, and projects through the sections above!</p>
+    </section>
+
+    <a href="#top" class="back-to-top">Top</a>
+
+    <script>
+        window.onscroll = function () {
+            var scrollButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+
+    <div class="nav-buttons">
+        <a href="about.html" class="nav-button next-button"><span class="button-text"><b>Next -></b></span></a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Praneetha Peyyeti. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

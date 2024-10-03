@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Praneetha Peyyeti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            animation: slideDown 1s ease;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: hsl(200, 24%, 17%); /* Dark text for links */
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722; /* Orange color on hover */
+        }
+
+        section#experience {
+            padding: 40px;
+            color: #e0e0e0; /* Light gray text for the experience section */
+            background-image: url('/gif/experience-bg.gif');
+            background-size: cover;
+            background-position: center;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section#experience h2 {
+            color: #ffffff; /* White color for main heading */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .job {
+            background-color: rgba(53, 51, 51, 0.8); /* Semi-transparent dark background */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+            animation: fadeInUp 1s ease;
+        }
+
+        .job h3 {
+            color: #4CAF50; /* Green color for job titles */
+            margin: 0 0 10px 0;
+        }
+
+        .job p {
+            color: #d0d0d0; /* Slightly darker gray for paragraph text */
+            margin: 5px 0;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            color: #ff5722; /* Orange color for navigation buttons */
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            color: #e64a19; /* Darker orange on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Praneetha Peyyeti</h1>
+        <p>Cybersecurity Enthusiast | eJPT Certified | B.Tech Graduate</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3>Software Engineer Trainee - Capella Infotech Solutions</h3>
+            <p><strong>Duration:</strong> Jan 2023 - April 2023</p>
+            <p>As a Software Engineer Trainee, I worked on key projects including developing secure data management systems. I implemented security measures such as encryption and secure login mechanisms, contributing to enhanced system security and user authentication.</p>
+            <!-- <img src="capella-infotech.jpg" alt="Capella Infotech Solutions" /> -->
+        </div>
+
+        <div class="job">
+            <h3>Trainee - Tata Advanced Systems Limited</h3>
+            <p><strong>Duration:</strong> July 2023 - Jan 2024</p>
+            <p>During my internship at Tata Advanced Systems Limited, I worked in a collaborative environment focused on delivering critical infrastructure projects. I contributed to secure coding practices and ensured systems adhered to cybersecurity protocols.</p>
+            <!-- <img src="tata-advanced-systems.jpg" alt="Tata Advanced Systems" /> -->
+        </div>
+    </section>
+    
+    <a href="#top" class="back-to-top">Back to Top</a>
+
+    <script>
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+
+    <div class="nav-buttons">
+        <a href="certifications.html" class="nav-button previous-button"></a>
+        <a href="projects.html" class="nav-button next-button"></a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Praneetha Peyyeti. All rights reserved.</p>
+    </footer>
+    
+</body>
+
+</html>

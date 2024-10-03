@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praneetha's Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        section#education {
+            padding: 40px;
+            color: #2d19c5; /* Blue text for the education section */
+            background-image: url('/gif/education-bg.gif'); /* Background GIF */
+            background-size: cover;
+            background-position: center;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section#education h2 {
+            color: blanchedalmond; /* Color for section heading */
+            padding: 20px;
+            text-align: left;
+            font-size: 2.5em;
+        }
+
+        .education-box {
+            background-color: rgba(53, 51, 51, 0.8); /* Semi-transparent dark background */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 15px;
+            margin: 15px 0; /* Space between boxes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            animation: fadeInUp 1s ease;
+        }
+
+        section#education h3 {
+            color: rgb(162, 145, 128); /* Color for section headings */
+            padding: 5px;
+            font-size: 1.5em;
+        }
+
+        section#education p {
+            color: rgb(238, 218, 218);
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a; /* Darker background for footer */
+            color: #ffffff; /* White text for footer */
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Praneetha Peyyeti</h1>
+        <p>Cybersecurity Enthusiast | eJPT Certified | B.Tech Graduate</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-box">
+            <h3><b><u>Graduation</u></b></h3>
+            <p>Bachelor of Technology (B.Tech) in Computer Science and Engineering<br>
+                Vellore Institute of Technology (VIT-AP)<br>
+                Graduation: 2023</p>
+        </div>
+
+        <div class="education-box">
+            <h3><b><u>12th Standard</u></b></h3>
+            <p>Andhra Pradesh Board of Intermediate Education<br>
+                Sri Chaitanya College, Vijayawada<br>
+                Passout: 2019</p>
+        </div>
+
+        <div class="education-box">
+            <h3><u><b>10th Standard</u></b></h3>
+            <p>Andhra Pradesh Board of Secondary Education (BSEAP)<br>
+                Sri Chaitanya School, Amalapuram<br>
+                Passout: 2017</p>
+        </div>
+    </section>
+
+    <a href="#top" class="back-to-top">Back to Top</a>
+
+    <script>
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+
+    <div class="nav-buttons" style="text-align: center;">
+        <div class="nav-button previous-button" onclick="location.href='about.html'">
+            
+        </div>
+        <div class="nav-button next-button" onclick="location.href='certifications.html'">
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Praneetha Peyyeti. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

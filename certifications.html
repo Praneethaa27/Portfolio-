@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Praneetha Peyyeti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            animation: slideDown 1s ease;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: hsl(200, 24%, 17%); /* Dark text for links */
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722; /* Orange color on hover */
+        }
+
+        section#certifications {
+            padding: 40px;
+            color: #e0e0e0; /* Light gray text for the section */
+            background-image: url('/gif/certifications-bg.gif');
+            background-size: cover;
+            background-position: center;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section#certifications h1 {
+            color: #ffffff; /* White color for main heading */
+            font-size: 2.5em;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        section#certifications h3 {
+            color: #d0d0d0; /* Slightly darker gray for subheading */
+            margin: 10px 0;
+        }
+
+        section#certifications ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        section#certifications li {
+            margin: 20px 0;
+            background-color: rgba(53, 51, 51, 0.8); /* Semi-transparent dark background */
+            padding: 15px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            animation: fadeInUp 1s ease;
+        }
+
+        section#certifications a {
+            color: #0f0f0f; /* Link color */
+            font-size: small;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        section#certifications a:hover {
+            color: #ff5722; /* Change color on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Praneetha Peyyeti</h1>
+        <p>Cybersecurity Enthusiast | eJPT Certified | B.Tech Graduate</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="certifications">
+        <h1>Certifications</h1>
+        <h3>• eLearnSecurity Junior Penetration Tester (eJPT)<br>
+            • Cryptography</h3>
+        <ul>
+            <li>
+                <a href="https://certs.ine.com/cf49921e-2da0-4b13-bf24-8586d0cbbf09" target="_blank">
+                    eLearnSecurity Junior Penetration Tester (eJPT)
+                </a>
+                <img src="/images/eJPT-cert.jpg" alt="eJPT Certificate" width="450" height="350" />
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1lkduQPQsq3KA-mby0PSoK8LEFdKpaG38/view?usp=sharing" target="_blank">
+                    Cryptography Certificate
+                </a>
+                <img src="/images/cryptography-cert.jpg" alt="Cryptography Certificate" width="450" height="350" />
+            </li>
+        </ul>
+    </section>
+
+    <a href="#top" class="back-to-top">Back to Top</a>
+
+    <script>
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+
+    <div class="nav-buttons" style="text-align: center;">
+        <a href="education.html" class="nav-button previous-button"><span class="button-text"></span></a>
+        <a href="experience.html" class="nav-button next-button"><span class="button-text"></span></a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Praneetha Peyyeti. All rights reserved.</p>
+    </footer>
+    
+</body>
+
+</html>
